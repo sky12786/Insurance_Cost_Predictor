@@ -1,0 +1,2380 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='SummaryStatisticsDashboard_17763237717700' path='/workbooks' revision='1.4' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='insurance (insurance)' inline='true' name='federated.1tuuj121nx6m4i1fgvqye1q6yoa0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='insurance' name='excel-direct.12upcl90ncfhgv14ueph502bfl41'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/aakas/OneDrive/Documents/Scaler/Insurance Cost Prediction DS Portfolio Project/insurance.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.12upcl90ncfhgv14ueph502bfl41' name='insurance' table='[insurance$]' type='table'>
+          <columns gridOrigin='A1:K987:no:A1:K987:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Age' ordinal='0' />
+            <column datatype='integer' name='Diabetes' ordinal='1' />
+            <column datatype='integer' name='BloodPressureProblems' ordinal='2' />
+            <column datatype='integer' name='AnyTransplants' ordinal='3' />
+            <column datatype='integer' name='AnyChronicDiseases' ordinal='4' />
+            <column datatype='integer' name='Height' ordinal='5' />
+            <column datatype='integer' name='Weight' ordinal='6' />
+            <column datatype='integer' name='KnownAllergies' ordinal='7' />
+            <column datatype='integer' name='HistoryOfCancerInFamily' ordinal='8' />
+            <column datatype='integer' name='NumberOfMajorSurgeries' ordinal='9' />
+            <column datatype='integer' name='PremiumPrice' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[insurance]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K987:no:A1:K987:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[insurance]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diabetes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Diabetes]</local-name>
+            <parent-name>[insurance]</parent-name>
+            <remote-alias>Diabetes</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BloodPressureProblems</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BloodPressureProblems]</local-name>
+            <parent-name>[insurance]</parent-name>
+            <remote-alias>BloodPressureProblems</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AnyTransplants</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AnyTransplants]</local-name>
+            <parent-name>[insurance]</parent-name>
+            <remote-alias>AnyTransplants</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AnyChronicDiseases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AnyChronicDiseases]</local-name>
+            <parent-name>[insurance]</parent-name>
+            <remote-alias>AnyChronicDiseases</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Height</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Height]</local-name>
+            <parent-name>[insurance]</parent-name>
+            <remote-alias>Height</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weight</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Weight]</local-name>
+            <parent-name>[insurance]</parent-name>
+            <remote-alias>Weight</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KnownAllergies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[KnownAllergies]</local-name>
+            <parent-name>[insurance]</parent-name>
+            <remote-alias>KnownAllergies</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HistoryOfCancerInFamily</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HistoryOfCancerInFamily]</local-name>
+            <parent-name>[insurance]</parent-name>
+            <remote-alias>HistoryOfCancerInFamily</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumberOfMajorSurgeries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumberOfMajorSurgeries]</local-name>
+            <parent-name>[insurance]</parent-name>
+            <remote-alias>NumberOfMajorSurgeries</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PremiumPrice</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PremiumPrice]</local-name>
+            <parent-name>[insurance]</parent-name>
+            <remote-alias>PremiumPrice</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[AnyChronicDiseases]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[AnyTransplants]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Blood Pressure Problems' datatype='integer' name='[BloodPressureProblems]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[Diabetes]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='History Of Cancer In Family' datatype='integer' name='[HistoryOfCancerInFamily]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Known Allergies' datatype='integer' name='[KnownAllergies]' role='dimension' type='ordinal' />
+      <column caption='Number Of Major Surgeries' datatype='integer' name='[NumberOfMajorSurgeries]' role='measure' type='quantitative' />
+      <column caption='Premium Price' datatype='integer' name='[PremiumPrice]' role='measure' type='quantitative' />
+      <column caption='insurance' datatype='table' name='[__tableau_internal_object_id__].[insurance_0ADDDA4376454D42A65E2173A8093CC5]' role='measure' type='quantitative' />
+      <column-instance column='[AnyChronicDiseases]' derivation='None' name='[none:AnyChronicDiseases:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[AnyTransplants]' derivation='None' name='[none:AnyTransplants:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[BloodPressureProblems]' derivation='None' name='[none:BloodPressureProblems:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Diabetes]' derivation='None' name='[none:Diabetes:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[HistoryOfCancerInFamily]' derivation='None' name='[none:HistoryOfCancerInFamily:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[KnownAllergies]' derivation='None' name='[none:KnownAllergies:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/aakas/AppData/Local/Temp/TableauTemp/#TableauTemp_0sc0cu21cvtj0t1dgmwtp0tv788m.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/20/2026 01:30:35 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>0</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Diabetes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Diabetes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Diabetes</remote-alias>
+              <ordinal>1</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BloodPressureProblems</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BloodPressureProblems]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BloodPressureProblems</remote-alias>
+              <ordinal>2</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AnyTransplants</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[AnyTransplants]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AnyTransplants</remote-alias>
+              <ordinal>3</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AnyChronicDiseases</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[AnyChronicDiseases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AnyChronicDiseases</remote-alias>
+              <ordinal>4</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Height</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Height]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Height</remote-alias>
+              <ordinal>5</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weight</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Weight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weight</remote-alias>
+              <ordinal>6</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>74</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KnownAllergies</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[KnownAllergies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>KnownAllergies</remote-alias>
+              <ordinal>7</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HistoryOfCancerInFamily</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[HistoryOfCancerInFamily]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HistoryOfCancerInFamily</remote-alias>
+              <ordinal>8</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NumberOfMajorSurgeries</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[NumberOfMajorSurgeries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NumberOfMajorSurgeries</remote-alias>
+              <ordinal>9</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PremiumPrice</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PremiumPrice]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PremiumPrice</remote-alias>
+              <ordinal>10</ordinal>
+              <family>insurance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[insurance_0ADDDA4376454D42A65E2173A8093CC5]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Diabetes:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>414</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:AnyChronicDiseases:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:BloodPressureProblems:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:AnyTransplants:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:HistoryOfCancerInFamily:ok]' type='palette'>
+            <map to='#e15759'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:KnownAllergies:ok]' type='palette'>
+            <map to='#e15759'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='insurance' id='insurance_0ADDDA4376454D42A65E2173A8093CC5'>
+            <properties context=''>
+              <relation connection='excel-direct.12upcl90ncfhgv14ueph502bfl41' name='insurance' table='[insurance$]' type='table'>
+                <columns gridOrigin='A1:K987:no:A1:K987:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Age' ordinal='0' />
+                  <column datatype='integer' name='Diabetes' ordinal='1' />
+                  <column datatype='integer' name='BloodPressureProblems' ordinal='2' />
+                  <column datatype='integer' name='AnyTransplants' ordinal='3' />
+                  <column datatype='integer' name='AnyChronicDiseases' ordinal='4' />
+                  <column datatype='integer' name='Height' ordinal='5' />
+                  <column datatype='integer' name='Weight' ordinal='6' />
+                  <column datatype='integer' name='KnownAllergies' ordinal='7' />
+                  <column datatype='integer' name='HistoryOfCancerInFamily' ordinal='8' />
+                  <column datatype='integer' name='NumberOfMajorSurgeries' ordinal='9' />
+                  <column datatype='integer' name='PremiumPrice' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Remove All Filters' name='[Action1_DCAEF02F62EF47819995FD0D92679B8A]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Summary Statistics Dashboard' type='sheet' worksheet='Remove All Filters' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Average Age,Average Weight,Avg Premium Price' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Summary Statistics Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Any Chronic Diseases Count'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='12'>Any Chronic Diseases Count</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='insurance (insurance)' name='federated.1tuuj121nx6m4i1fgvqye1q6yoa0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tuuj121nx6m4i1fgvqye1q6yoa0'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[AnyChronicDiseases]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Height]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Weight]' role='measure' type='quantitative' />
+            <column-instance column='[AnyChronicDiseases]' derivation='Count' name='[cnt:AnyChronicDiseases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AnyChronicDiseases]' derivation='None' name='[none:AnyChronicDiseases:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Height]' derivation='None' name='[none:Height:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weight]' derivation='None' name='[none:Weight:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Age:qk]' filter-group='3' included-values='in-range'>
+            <min>26</min>
+            <max>40</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Height:qk]' filter-group='4' included-values='in-range'>
+            <min>145</min>
+            <max>187</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Weight:qk]' filter-group='5' included-values='in-range'>
+            <min>51</min>
+            <max>117</max>
+          </filter>
+          <slices>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Age:qk]</column>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Height:qk]</column>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Weight:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:AnyChronicDiseases:ok]' />
+              <wedge-size column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[cnt:AnyChronicDiseases:qk]' />
+              <text column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[cnt:AnyChronicDiseases:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7251380681991577' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{90D88838-4B4F-4572-8659-5466E07E0AE5}' />
+    </worksheet>
+    <worksheet name='Any Transplants'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='12'>Any Transplants</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='insurance (insurance)' name='federated.1tuuj121nx6m4i1fgvqye1q6yoa0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tuuj121nx6m4i1fgvqye1q6yoa0'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[AnyTransplants]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Height]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Weight]' role='measure' type='quantitative' />
+            <column-instance column='[AnyTransplants]' derivation='Count' name='[cnt:AnyTransplants:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AnyTransplants]' derivation='None' name='[none:AnyTransplants:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Height]' derivation='None' name='[none:Height:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weight]' derivation='None' name='[none:Weight:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Age:qk]' filter-group='3' included-values='in-range'>
+            <min>26</min>
+            <max>40</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Height:qk]' filter-group='4' included-values='in-range'>
+            <min>145</min>
+            <max>187</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Weight:qk]' filter-group='5' included-values='in-range'>
+            <min>51</min>
+            <max>117</max>
+          </filter>
+          <slices>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Age:qk]</column>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Height:qk]</column>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Weight:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:AnyTransplants:ok]' />
+              <wedge-size column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[cnt:AnyTransplants:qk]' />
+              <text column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[cnt:AnyTransplants:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7251380681991577' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{36CD334E-D5BF-4C93-A053-8B98C634EEF7}' />
+    </worksheet>
+    <worksheet name='Average Age'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='12'>Avg. Age</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='insurance (insurance)' name='federated.1tuuj121nx6m4i1fgvqye1q6yoa0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tuuj121nx6m4i1fgvqye1q6yoa0'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[avg:Age:qk]</rows>
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[avg:Age:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[avg:Age:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>41.745436105476671</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{223C162A-C755-4366-8D36-A0FA6B54187D}' />
+    </worksheet>
+    <worksheet name='Average Weight'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='12'>Avg. Weight</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='insurance (insurance)' name='federated.1tuuj121nx6m4i1fgvqye1q6yoa0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tuuj121nx6m4i1fgvqye1q6yoa0'>
+            <column datatype='integer' name='[Weight]' role='measure' type='quantitative' />
+            <column-instance column='[Weight]' derivation='Avg' name='[avg:Weight:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[avg:Weight:qk]</rows>
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[avg:Weight:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[avg:Weight:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>76.950304259634891</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{E17DACF0-BFB5-4A92-B09A-2274FF73D3FA}' />
+    </worksheet>
+    <worksheet name='Avg Premium Price'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='12'>Avg. Premium Price</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='insurance (insurance)' name='federated.1tuuj121nx6m4i1fgvqye1q6yoa0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tuuj121nx6m4i1fgvqye1q6yoa0'>
+            <column caption='Premium Price' datatype='integer' name='[PremiumPrice]' role='measure' type='quantitative' />
+            <column-instance column='[PremiumPrice]' derivation='Avg' name='[avg:PremiumPrice:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[avg:PremiumPrice:qk]</rows>
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[avg:PremiumPrice:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[avg:PremiumPrice:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>24336.713995943206</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{A4BB7DB4-BB5F-478D-9FF4-2B151261258A}' />
+    </worksheet>
+    <worksheet name='Blood Pressure Problem'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='12'>Blood Pressure Problem</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='insurance (insurance)' name='federated.1tuuj121nx6m4i1fgvqye1q6yoa0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tuuj121nx6m4i1fgvqye1q6yoa0'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Blood Pressure Problems' datatype='integer' name='[BloodPressureProblems]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Height]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Weight]' role='measure' type='quantitative' />
+            <column-instance column='[BloodPressureProblems]' derivation='Count' name='[cnt:BloodPressureProblems:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BloodPressureProblems]' derivation='None' name='[none:BloodPressureProblems:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Height]' derivation='None' name='[none:Height:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weight]' derivation='None' name='[none:Weight:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Age:qk]' filter-group='3' included-values='in-range'>
+            <min>26</min>
+            <max>40</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Height:qk]' filter-group='4' included-values='in-range'>
+            <min>145</min>
+            <max>187</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Weight:qk]' filter-group='5' included-values='in-range'>
+            <min>51</min>
+            <max>117</max>
+          </filter>
+          <slices>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Age:qk]</column>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Height:qk]</column>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Weight:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:BloodPressureProblems:ok]' />
+              <wedge-size column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[cnt:BloodPressureProblems:qk]' />
+              <text column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[cnt:BloodPressureProblems:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7251380681991577' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DEACBD91-1096-4E9A-904E-DB8E3866B2F3}' />
+    </worksheet>
+    <worksheet name='Diabetes Count'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='12'>Diabetes Count</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='insurance (insurance)' name='federated.1tuuj121nx6m4i1fgvqye1q6yoa0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tuuj121nx6m4i1fgvqye1q6yoa0'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Diabetes]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Height]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Weight]' role='measure' type='quantitative' />
+            <column-instance column='[Diabetes]' derivation='Count' name='[cnt:Diabetes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Diabetes]' derivation='None' name='[none:Diabetes:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Height]' derivation='None' name='[none:Height:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weight]' derivation='None' name='[none:Weight:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Age:qk]' filter-group='3' included-values='in-range'>
+            <min>26</min>
+            <max>40</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Height:qk]' filter-group='4' included-values='in-range'>
+            <min>145</min>
+            <max>187</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Weight:qk]' filter-group='5' included-values='in-range'>
+            <min>51</min>
+            <max>117</max>
+          </filter>
+          <slices>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Age:qk]</column>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Height:qk]</column>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Weight:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Diabetes:ok]' />
+              <wedge-size column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[cnt:Diabetes:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7251380681991577' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[cnt:Diabetes:qk]</field>
+                  <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Diabetes:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>572</value>
+                <value>0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[cnt:Diabetes:qk]</field>
+                  <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Diabetes:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>414</value>
+                <value>1</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{F3B05175-5B5B-4C2F-9EC0-90286CA61FF3}' />
+    </worksheet>
+    <worksheet name='History Of Cancer In Family'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='12'>History Of Cancer In Family</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='insurance (insurance)' name='federated.1tuuj121nx6m4i1fgvqye1q6yoa0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tuuj121nx6m4i1fgvqye1q6yoa0'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Height]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='History Of Cancer In Family' datatype='integer' name='[HistoryOfCancerInFamily]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Weight]' role='measure' type='quantitative' />
+            <column-instance column='[HistoryOfCancerInFamily]' derivation='Count' name='[cnt:HistoryOfCancerInFamily:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Height]' derivation='None' name='[none:Height:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HistoryOfCancerInFamily]' derivation='None' name='[none:HistoryOfCancerInFamily:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Weight]' derivation='None' name='[none:Weight:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Age:qk]' filter-group='3' included-values='in-range'>
+            <min>26</min>
+            <max>40</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Height:qk]' filter-group='4' included-values='in-range'>
+            <min>145</min>
+            <max>187</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Weight:qk]' filter-group='5' included-values='in-range'>
+            <min>51</min>
+            <max>117</max>
+          </filter>
+          <slices>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Age:qk]</column>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Height:qk]</column>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Weight:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:HistoryOfCancerInFamily:ok]' />
+              <wedge-size column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[cnt:HistoryOfCancerInFamily:qk]' />
+              <text column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[cnt:HistoryOfCancerInFamily:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7251380681991577' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4D87C02F-7052-421C-9676-4E2C89715406}' />
+    </worksheet>
+    <worksheet name='Known Allergies'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='12'>Known Allergies</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='insurance (insurance)' name='federated.1tuuj121nx6m4i1fgvqye1q6yoa0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tuuj121nx6m4i1fgvqye1q6yoa0'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Height]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Known Allergies' datatype='integer' name='[KnownAllergies]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Weight]' role='measure' type='quantitative' />
+            <column-instance column='[KnownAllergies]' derivation='Count' name='[cnt:KnownAllergies:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Height]' derivation='None' name='[none:Height:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[KnownAllergies]' derivation='None' name='[none:KnownAllergies:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Weight]' derivation='None' name='[none:Weight:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Age:qk]' filter-group='3' included-values='in-range'>
+            <min>26</min>
+            <max>40</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Height:qk]' filter-group='4' included-values='in-range'>
+            <min>145</min>
+            <max>187</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Weight:qk]' filter-group='5' included-values='in-range'>
+            <min>51</min>
+            <max>117</max>
+          </filter>
+          <slices>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Age:qk]</column>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Height:qk]</column>
+            <column>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Weight:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:KnownAllergies:ok]' />
+              <wedge-size column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[cnt:KnownAllergies:qk]' />
+              <text column='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[cnt:KnownAllergies:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7251380681991577' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E7A78BE3-D2AD-47E1-B887-F2674DFB250F}' />
+    </worksheet>
+    <worksheet name='Remove All Filters'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='14'>Clear All Filters</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{112961A0-031E-4FAE-B64E-524A3EC07540}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Summary Statistics Dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='insurance (insurance)' name='federated.1tuuj121nx6m4i1fgvqye1q6yoa0' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1tuuj121nx6m4i1fgvqye1q6yoa0'>
+        <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+        <column datatype='integer' name='[Height]' role='measure' type='quantitative' />
+        <column datatype='integer' name='[Weight]' role='measure' type='quantitative' />
+        <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Height]' derivation='None' name='[none:Height:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Weight]' derivation='None' name='[none:Weight:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98184' id='33' param='horz' type-v2='layout-flow' w='99034' x='483' y='908'>
+            <zone h='98184' id='24' param='horz' type-v2='layout-flow' w='99034' x='483' y='908'>
+              <zone h='98184' id='17' type-v2='layout-basic' w='99034' x='483' y='908' />
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='95233' id='3' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='33293' x='0' y='5675'>
+          <zone h='95233' id='8' name='Avg Premium Price' w='11104' x='0' y='5675'>
+            <layout-cache type-h='fixed' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='95233' id='9' name='Average Weight' w='11105' x='11104' y='5675'>
+            <layout-cache type-h='fixed' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='95233' id='7' name='Average Age' w='11104' x='22209' y='5675'>
+            <layout-cache minheight='150' type-h='scalable' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='95233' id='5' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='27761' x='33313' y='5675'>
+          <zone h='31782' id='10' name='Diabetes Count' w='27761' x='33313' y='5675'>
+            <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='31783' id='12' name='Any Chronic Diseases Count' w='27761' x='33313' y='37457'>
+            <layout-cache type-h='fixed' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='31668' id='14' name='Blood Pressure Problem' w='27761' x='33313' y='69240'>
+            <layout-cache type-h='fixed' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='95233' id='20' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='27761' x='61135' y='5675'>
+          <zone h='31782' id='21' name='Any Transplants' w='27761' x='61135' y='5675'>
+            <layout-cache fixed-size-h='210' type-h='fixed' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='31783' id='22' name='History Of Cancer In Family' w='27761' x='61135' y='37457'>
+            <layout-cache fixed-size-h='210' type-h='fixed' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='31668' id='26' name='Known Allergies' w='27761' x='61135' y='69240'>
+            <layout-cache fixed-size-h='210' type-h='fixed' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone forceUpdate='true' h='5675' id='27' type-v2='text' w='100000' x='0' y='0'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Arial,sans-serif' fontsize='14'>Summary Statistics Dashboard</run>
+          </formatted-text>
+        </zone>
+        <zone h='95233' id='41' param='vert' type-v2='layout-flow' w='11165' x='89077' y='5675'>
+          <zone h='8286' id='34' name='Diabetes Count' param='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Age:qk]' type-v2='filter' values='database' w='11165' x='89077' y='5675'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='8286' id='35' name='Diabetes Count' param='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Height:qk]' type-v2='filter' values='database' w='11165' x='89077' y='13961'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='8286' id='36' name='Diabetes Count' param='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Weight:qk]' type-v2='filter' values='database' w='11165' x='89077' y='22247'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='4313' id='46' name='Remove All Filters' w='11165' x='89077' y='30760'>
+          <layout-cache type-h='scalable' type-w='fixed' />
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#ddebf0' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2750' minheight='2750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='48' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98184' id='47' param='vert' type-v2='layout-flow' w='99034' x='483' y='908'>
+                <zone forceUpdate='true' h='5675' id='27' type-v2='text' w='100000' x='0' y='0'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Arial,sans-serif' fontsize='14'>Summary Statistics Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='95233' id='8' is-fixed='true' name='Avg Premium Price' w='11104' x='0' y='5675'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='95233' id='9' is-fixed='true' name='Average Weight' w='11105' x='11104' y='5675'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='95233' id='7' is-fixed='true' name='Average Age' w='11104' x='22209' y='5675'>
+                  <layout-cache minheight='150' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8286' id='34' name='Diabetes Count' param='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Age:qk]' type-v2='filter' values='database' w='11165' x='89077' y='5675'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8286' id='35' name='Diabetes Count' param='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Height:qk]' type-v2='filter' values='database' w='11165' x='89077' y='13961'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8286' id='36' name='Diabetes Count' param='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Weight:qk]' type-v2='filter' values='database' w='11165' x='89077' y='22247'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='247' h='31782' id='10' is-fixed='true' name='Diabetes Count' w='27761' x='33313' y='5675'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='247' h='31782' id='21' is-fixed='true' name='Any Transplants' w='27761' x='61135' y='5675'>
+                  <layout-cache fixed-size-h='210' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='35' h='4313' id='46' is-fixed='true' name='Remove All Filters' w='11165' x='89077' y='30760'>
+                  <layout-cache type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ddebf0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='246' h='31783' id='12' is-fixed='true' name='Any Chronic Diseases Count' w='27761' x='33313' y='37457'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='246' h='31783' id='22' is-fixed='true' name='History Of Cancer In Family' w='27761' x='61135' y='37457'>
+                  <layout-cache fixed-size-h='210' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='245' h='31668' id='14' is-fixed='true' name='Blood Pressure Problem' w='27761' x='33313' y='69240'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='245' h='31668' id='26' is-fixed='true' name='Known Allergies' w='27761' x='61135' y='69240'>
+                  <layout-cache fixed-size-h='210' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{94750642-722F-4BEF-9A3E-C4A62CF7F42B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Summary Statistics Dashboard'>
+      <viewpoints>
+        <viewpoint name='Any Chronic Diseases Count'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Any Transplants'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average Age'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average Weight'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Avg Premium Price'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Blood Pressure Problem'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Diabetes Count'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='History Of Cancer In Family'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Known Allergies'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Remove All Filters' />
+      </viewpoints>
+      <active id='46' />
+      <simple-id uuid='{28FDA6F0-B468-4AE3-A870-9608643BE432}' />
+    </window>
+    <window class='worksheet' name='Average Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{221ED261-8C64-4C7C-971A-C349EBC46489}' />
+    </window>
+    <window class='worksheet' name='Avg Premium Price'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[avg:PremiumPrice:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[avg:PremiumPrice:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>24336.713995943206</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[:Measure Names]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[sum:AnyChronicDiseases:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9ACF00F1-2DE9-45B3-A3DA-D6DC6C1A9928}' />
+    </window>
+    <window class='worksheet' name='Average Weight'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[avg:Weight:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[avg:Weight:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>76.950304259634891</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+      </viewpoint>
+      <simple-id uuid='{E5A4C7E5-2AF2-4166-B75B-81FD428E59E2}' />
+    </window>
+    <window class='worksheet' name='Diabetes Count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Age:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Height:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Weight:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Diabetes:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Age:qk]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Calculation_0746903487995905:nk]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Diabetes:ok]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Height:qk]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Weight:qk]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[sum:AnyChronicDiseases:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{692A6585-E686-4EED-B808-C27C1F081E61}' />
+    </window>
+    <window class='worksheet' name='Any Chronic Diseases Count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:AnyChronicDiseases:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:AnyChronicDiseases:ok]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Calculation_0746903487995905:nk]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Diabetes:ok]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[sum:AnyChronicDiseases:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3B44EBEB-0B16-47BC-8AD8-8D09CA89C223}' />
+    </window>
+    <window class='worksheet' name='Blood Pressure Problem'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:BloodPressureProblems:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:BloodPressureProblems:ok]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Calculation_0746903487995905:nk]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Diabetes:ok]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[sum:AnyChronicDiseases:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6D868187-4B60-47D2-954D-E4FC370C0FAF}' />
+    </window>
+    <window class='worksheet' name='Any Transplants'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:AnyTransplants:ok]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Calculation_0746903487995905:nk]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Diabetes:ok]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[sum:AnyChronicDiseases:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0F543FE4-DC91-419B-8101-2101F581FA04}' />
+    </window>
+    <window class='worksheet' name='History Of Cancer In Family'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:HistoryOfCancerInFamily:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Calculation_0746903487995905:nk]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Diabetes:ok]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:HistoryOfCancerInFamily:ok]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[sum:AnyChronicDiseases:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3BE9BAEC-5E77-4FD0-B6B0-9FF6808BEF78}' />
+    </window>
+    <window class='worksheet' name='Known Allergies'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:KnownAllergies:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Calculation_0746903487995905:nk]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:Diabetes:ok]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[none:KnownAllergies:ok]</field>
+            <field>[federated.1tuuj121nx6m4i1fgvqye1q6yoa0].[sum:AnyChronicDiseases:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{56B423AE-6265-459D-933A-0FA0754024AF}' />
+    </window>
+    <window class='worksheet' name='Remove All Filters'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{088E0774-0BC0-49B5-BB26-F35846DBCA15}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='164' name='Any Chronic Diseases Count' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAACkCAYAAADBuSFLAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAABzElEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA2gfexgVEirsx8QAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='164' name='Any Transplants' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAACkCAYAAADBuSFLAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAABzElEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA2gfexgVEirsx8QAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Average Age' width='123'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Average Weight' width='132'>
+      iVBORw0KGgoAAAANSUhEUgAAAIQAAADACAYAAADFjcvdAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAANrUlEQVR4nO3df1CU953A8TesW1gRgqSowYIQfkikEI22eJUwxjQwRs1pzBSZpMGOptPE
+      MXo2eHe9TJik1zgBJ6lNJ52JGUfuaM8kHWKUqHhncbDRaZUEROVHIWtAl4gEgRVcdn147g9k
+      4bv8UKPi5tnPayZ/+PDsztfJm+f5ust+8NN1XUeIa/zv9gKEd5EghEKCEAoJQigkCKGQIIRC
+      ghAKCeIm9fT03O0l3FEShFBIEEIhQQiFBCEUEoRQSBBCIUEIhQQhFBKEUEgQQiFBCIUEIRQS
+      hFBIEEIhQQiFBCEUEoRQSBBCIUEIhQQhFBKEUEgQQjHhbi/g9nPReryYok8qudgLBIQze8kz
+      PPmDKZiHntX8VwqLdlN1tpeA6AdZ/kwOaZHm0Z7Ud+gG01L6G33zW/v0M+1OXdd13dl+Rt/3
+      1mb9N6Utgyd9XaYX/LJAL226dk5TqV7wywK97OvrP393d/edWLbXMNgtw8rRshCW/2IxD0zu
+      /243T36Axb9YTkjZUazXzqo9UELgyufJuHZFMEdm8PzKQEoO1N6ldXsPgwUxiUnB3Qz7cFVP
+      D93Bk5gEgI2G+mjmzglSTgmaM5fo+gZs47RSb2WwIMJ5dHUKJ97eyfFz3bhw0X3uODvfPkHK
+      6kcJB6CVC70RTAv0eGjgNCJ6L9A6/ov2KobbVJoiMvj5ij/y5ht5FE8y47o8gZTnNpERYRo8
+      yWLBMuyRFiweB0f7HKfdbr+dS/YqBgtCw7Z/K/99ZQW5v32WEBOgdVH/8R/Yev6nvLQ4AhNA
+      n0bfsMf2oXkcnDhx4rCzenp6CA4OviOr9wbGumV0HuFP5fH85MmE/hgATCEkPPkT4sv/xJFO
+      gEAsnTZaNI/Hai3YOi143kl8jbGCcDpxBnyHgGFfCOA7AU6cToBoYuPrqalTi9DqaqiPjyV6
+      XBbqvYwVRHgKc/wPs7+ii8H/3RpdFfs57D+HlHCAQOYteojq3QexDZyk2Ti4u5qHFs3z+SuE
+      n64ba3Cp1lXNn39XyPHeCGbGBWNvqMMW8ANyXnyKZPd9RMN2cCv5h/xJmhVKx5nT9D26mZcy
+      ru0xxtDT0zPi3sIoDBfEAFd3B90uwBxEaNDIL0lrDjt2h4YpMJjgwOul0E+CEAqjB2GsPYS4
+      ZRKEUBjshSnv0dDQQH5+PleuXBn2tbCwMPLy8ggLCwP6X/l8+eWX2bVrF3a7neTkZAoKCkhP
+      Tx/xuU+fPs3GjRs5duwYYWFhrF+/nhdffJGAgMF/cH/00UcUFxcrj7NYLGzevJm4uLhR1y1B
+      3CFRUVHk5eXhuUWrqqpi69at7j93d3fz7LPPkpKSgtVqZeLEiVitVi5evDji8zY2NrJu3Tpe
+      ffVVHn74Ybq6uli7di1btmzhlVdewd+//6JfXl7OggULWLp0qfuxfn5+hIeHj73wu/jW+7fS
+      rfw8hKZp+po1a/QdO3a4j+3YsUNfs2aNrmnaDT1Hbm6uvn37duXYF198oaelpen19fW6ruu6
+      0+nUs7Oz9aNHj970GmUPMY4qKyuxWq3u71qXy8W+ffvIzs52f2dfT3t7O0lJScqxmJgYZsyY
+      QXV1NQBdXV10dHRw33333fQaJYhx0tfXx7vvvktWVpb7st3e3s6lS5eIi4ujqqqKoqIiPvzw
+      w1FvFwAOh4OmpqZhx+Pi4jh58iTQvyfx8/Ojp6eHc+fO0draSl/f8LfzRiJBjJP6+nrq6+tZ
+      tmyZ+5jL5aKhoYH58+fz+uuv43A4OHLkCMnJyRQVFY34PDk5Obz22mtUVFQAoGkaVVVVHDt2
+      zH3OhAkTmDFjBlu2bCE3N5f09HSmT59OYWHh9cO46ZuMj/smewhN0/RNmzbp+fn5yvHm5mY9
+      NTVVt1qtyvGamhp97ty57j2Bp9LSUj0pKUk3mUz6vffeq2dlZemrVq3S8/LyRl1DTU2NnpKS
+      opeVlY25VrlCjIPGxkYqKip4+umnleMWi4V77rkHZ//bsG4JCQkkJyfT1tY24vNlZGRw6tQp
+      rl69SltbG7t27SIkJISUlJRR15CYmMiKFSs4fPjwmGuVIMbB9u3bWbJkCREREcrxyZMnExkZ
+      yaeffqoc7+3txW63YzLd2PsrNpuNuro6kpOTxzzv6tWrmM1jf9RAgrjDrFYrn332GU899dSw
+      r/n7+/Pcc8/xzjvv0NjY6D5+4sQJ7HY7iYmJAHz55Ze4XC4AnE4nDofDfW5vby9vvvkmCxcu
+      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
+      V4UtAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Avg Premium Price' width='133'>
+      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
+      MBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQk
+      MBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQkMBQk
+      MBQkMBQk6KvaAYBjZbW1j2FZrX06C0Uuvl/3V3z7/HCEfxCJFz1dUGZKx+no1ViV82csHNze
+      wTEVZbVl2lCUl9UG4S/vNN9AADo8fThSVluXQlsLltVW0VkoHCmrrUOhbeVOltVWp7NQSLbL
+      ausyhmW11nS2pqjOflmto2NYVqv17JbV1mEMy2q1LO9Jf6cPcwbiVizD0Y4zsGxWiJ1AODAG
+      lrrKzhg6LQQ5n2/FyebePVlBZ6GoKqv92EZ7seNjrHgEYvpkV+xbG4cMc4MesC7pLBS1l9U6
+      NkZiWW0Vfa0pHCmrrXehLctqLVhWWw8sq6Vmh6EggaEggaEggaEggaEggaEggaEggaEggaEg
+      gaEggaEggaEggaEggaEggaEggaEggaEggaEggaEggaEggaEggaEggaEggaEggaEggaEggaEg
+      gaEggaEggaEggaEggaEggaEggaEggaEggaEggaEggaEggaEggaEggaEggaEggaEggaEgQV/V
+      DgAcK6s1I+/CAWze/R2uZwGeXQIRNmUYehqryhpYVmufzmaKXHy/bgE2XnkBIR9EYtny5Vg6
+      Nwy+Z1djVfy9ylHmK7uwdGc+gueuxoYNqzE3OB87l+7ClWqtP4V3knAtW/vs5WW1r+LNZhwI
+      QHehcKSINhfHDl7GW1PGVcwMBhh7jsOUty7j4LFcu8/LstoqOguFA0W05uv4Ias3emk6Rg3o
+      1Ks3sn64DpsVYSyr1dBZKCRRRPvgZ9zz9Ya39UBvb/je+9lGrTXLaq3pcKFpUUMRraurbCp2
+      cYUrftFsYlmt1rNdVms2wwxoP+SKbdWxrFbr2S2rdXVF64y7uG/9uPt3kdHaFa7VNrGs1jad
+      hcKBItq2ndG19BJSrX/cTL2E0q6d0dbWY1hWq6GzUDhSRNsR/YMMiN9brXTWlIS98QYE9e9o
+      91Esq63yfzAEigfRXR7iAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='164' name='Blood Pressure Problem' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAACkCAYAAADBuSFLAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAABzElEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA2gfexgVEirsx8QAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='164' name='Diabetes Count' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAACkCAYAAADBuSFLAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAABzElEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA2gfexgVEirsx8QAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='164' name='History Of Cancer In Family' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAACkCAYAAADBuSFLAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAABzElEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA2gfexgVEirsx8QAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='164' name='Known Allergies' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAACkCAYAAADBuSFLAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAABzElEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA2gfexgVEirsx8QAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Remove All Filters' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACJElEQVR4nO3TMRHDQAADQdkT/hSNIEUQfGC4uF0EKnTXOecMoj7b9nx/kwFF9zbnJ+t+
+      ewC8SQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAm
+      ANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIg
+      TQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIE
+      QJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCk
+      CYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoA
+      SBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0
+      AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMA
+      aQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAm
+      ANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIg
+      TQCkCYA0AZAmANL+sAIMN233KeAAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Summary Statistics Dashboard' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

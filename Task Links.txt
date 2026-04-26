@@ -1,0 +1,7 @@
+Summary Statistics Dashboard: https://public.tableau.com/app/profile/aakash.patel8371/viz/SummaryStatisticsDashboard_17763237717700/SummaryStatisticsDashboard?publish=yes
+
+
+Premium Pricing Analysis Dashboard: https://public.tableau.com/app/profile/aakash.patel8371/viz/PremiumPricingAnalysisDashboard_17763442494870/Dashboard1?publish=yes
+
+
+Risk Factors Analysis Dashboard:https://public.tableau.com/app/profile/aakash.patel8371/viz/RiskFactorsAnalysisDashboard/Dashboard1?publish=yes
